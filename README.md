@@ -4,7 +4,6 @@
 2. 推送RTMP流到SRS。我们可以使用任何能够产生RTMP流的工具或设备，比如OBS、FFmpeg、摄像头等，把RTMP流推送到SRS的指定地址。例如，我们可以使用FFmpeg命令：
 bash
 ffmpeg -re -i input.mp4 -c copy -f flv rtmp://localhost/live/stream
-```
 
 3. 在浏览器中播放WebRTC流。我们可以使用SRS提供的WebRTC播放器，输入SRS的信令地址和流名称，就可以在浏览器中观看WebRTC流。例如，我们可以访问：
 
