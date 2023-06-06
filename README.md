@@ -28,3 +28,8 @@ document.getElementById("largeVideoContainer").appendChild(iframe);
 这样，我们就可以在Jitsi-meet中看到RTMP流的画面，并与其他参会者进行视频会议。
 
 ```
+
+然而这种方案并不好用,加载慢,容易断线,容易卡住,容易暂停等不方便使用的问题.
+另外一种办法:  rtmp-webrtc-chrome-libjs-jitsi
+这种办法是通过Server端 headless的方式实现. 可以做到很高的清晰度,也很低的时延,同时不容易出现意外情况.
+缺点: cpu的占用太高, 原理跟jibri一致.
